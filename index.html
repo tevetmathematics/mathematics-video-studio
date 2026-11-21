@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A handwritten worked example in implicit differentiation by Matthew Chomba.">
+  <title>Implicit Differentiation | Mathematics Video Studio</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="frame">
+      <span class="studio-mark" aria-hidden="true">∫</span>
+      <span>Mathematics Video Studio</span>
+    </div>
+  </header>
+  <main class="frame">
+    <p class="topic">Differentiation</p>
+    <h1>Implicit Differentiation</h1>
+    <p class="byline">Matthew Chomba <span aria-hidden="true">·</span> 3 min 31 sec</p>
+    <video controls playsinline preload="metadata" poster="./lesson-cover.jpg"
+      aria-label="Implicit differentiation handwriting animation" aria-describedby="lesson-description">
+      <source src="./implicit-differentiation.mp4" type="video/mp4">
+      <a href="./implicit-differentiation.mp4">Open lesson video</a>
+    </video>
+    <p id="lesson-description">Find <var>dy</var>/<var>dx</var> for
+      <span class="formula">2<var>x</var><sup>3</sup> − 5<var>y</var><sup>4</sup> = 3<var>y</var></span>
+      using the chain rule.</p>
+    <details>
+      <summary>Read the worked solution</summary>
+      <ol>
+        <li><strong>Differentiate both sides with respect to <var>x</var>.</strong>
+          Treat <var>y</var> as a function of <var>x</var>.
+          <span class="formula equation">6<var>x</var><sup>2</sup> − 20<var>y</var><sup>3</sup>(<var>dy</var>/<var>dx</var>) = 3(<var>dy</var>/<var>dx</var>)</span>
+        </li>
+        <li><strong>Collect and factor the derivative terms.</strong>
+          <span class="formula equation">6<var>x</var><sup>2</sup> = (3 + 20<var>y</var><sup>3</sup>)(<var>dy</var>/<var>dx</var>)</span>
+        </li>
+        <li><strong>Divide by the coefficient of the derivative.</strong>
+          <span class="equation">
+            <math display="block" aria-label="d y over d x equals six x squared over three plus twenty y cubed">
+              <mfrac><mrow><mi mathvariant="normal">d</mi><mi>y</mi></mrow><mrow><mi mathvariant="normal">d</mi><mi>x</mi></mrow></mfrac>
+              <mo>=</mo>
+              <mfrac>
+                <mrow><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup></mrow>
+                <mrow><mn>3</mn><mo>+</mo><mn>20</mn><msup><mi>y</mi><mn>3</mn></msup></mrow>
+              </mfrac>
+            </math>
+          </span>
+        </li>
+      </ol>
+    </details>
+  </main>
+</body>
+</html>

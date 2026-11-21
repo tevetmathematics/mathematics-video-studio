@@ -1,0 +1,109 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, sans-serif;
+  color: #172033;
+  background: #f5f7fb;
+  line-height: 1.55;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+.frame {
+  width: min(68rem, 100% - clamp(2rem, 7vw, 6rem));
+  margin-inline: auto;
+}
+
+.site-header {
+  background: #132347;
+  color: #fff;
+  font-weight: 700;
+}
+
+.site-header .frame {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  min-height: 3.65rem;
+  padding-block: .45rem;
+}
+
+.studio-mark {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 1px solid #768db7;
+  border-radius: .55rem;
+  color: #dbe9ff;
+  font: 1.6rem Georgia, serif;
+}
+
+main { padding-block: clamp(1.55rem, 5vw, 3.5rem) 3rem; }
+
+.topic {
+  margin: 0 0 .35rem;
+  color: #27508b;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.95rem, 5vw, 4rem);
+  line-height: 1.07;
+  letter-spacing: -.045em;
+}
+
+.byline {
+  margin: .7rem 0 1.2rem;
+  color: #485675;
+}
+
+.byline span { padding-inline: .25rem; }
+
+video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #111a2b;
+  border: 1px solid #c9d3e3;
+  border-radius: .9rem;
+}
+
+#lesson-description { margin: 1.15rem 0; }
+
+.formula, math {
+  font-family: "Cambria Math", "STIX Two Math", Georgia, serif;
+}
+
+details {
+  padding: .15rem 1rem;
+  border: 1px solid #d1daea;
+  border-radius: .75rem;
+  background: #fff;
+}
+
+summary {
+  padding-block: .8rem;
+  color: #22477e;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+summary:focus-visible, video:focus-visible {
+  outline: .2rem solid #275eb1;
+  outline-offset: .2rem;
+}
+
+ol { padding-inline-start: 1.4rem; }
+li + li { margin-top: .9rem; }
+
+.equation {
+  display: block;
+  margin-top: .25rem;
+  padding: .3rem 0 .3rem .65rem;
+  border-inline-start: .18rem solid #d8e4f7;
+}
+
+math { font-size: 1.15rem; }
